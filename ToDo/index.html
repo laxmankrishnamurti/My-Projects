@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My ToDo | Plan Your Day</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="ToDo.js" defer></script>
-</head>
-<body>
-    <div id="page-contianer">
-        <div id="container">
-            <section id="navigation-bar">
-                <!-- <img src="../Assets/image-01.jpg" alt="image"> -->
-                <header id="header">
-                    <nav id="nav-bar">
-                        <ul>
-                            <li>About</li>
-                            <li>At a Glance</li>
-                            <li>Sign Up</li>
-                            <li>Log In</li>
-                        </ul>
-                    </nav>
-                </header>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Todo | Make your life better</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./todo.js" defer></script>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="wrapper">
+        <section id="section-1">
+          <h1 id="main-heading">Todo - Plan Your Day</h1>
+        </section>
+        <div id="hero-section">
+          <section id="section-2">
+            <nav>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">At a Glance</a></li>
+                <li><a href="#">Ask</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section id="section-3">
+            <div id="content-wrapper">
+              <div id="input-section">
+                <input
+                  type="text"
+                  placeholder="Enter Your ToDo"
+                  id="userInput"
+                />
+
+                <button id="submit">Add</button>
+              </div>
+              <div id="todo-task"></div>
+            </div>
+          </section>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
