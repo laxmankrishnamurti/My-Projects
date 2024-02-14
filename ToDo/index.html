@@ -11,32 +11,82 @@
   <body>
     <div id="page-container">
       <div id="wrapper">
+        <!-- Hero-Section  -->
+
         <section id="section-1">
           <h1 id="main-heading">Todo - Plan Your Day</h1>
         </section>
-        <div id="hero-section">
+        <!-- Navigation Section  -->
+
+        <div id="main-section">
           <section id="section-2">
             <nav>
               <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">At a Glance</a></li>
-                <li><a href="#">Ask</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#glance">At a Glance</a></li>
+                <li><a href="#ask">Ask</a></li>
               </ul>
             </nav>
           </section>
-          <section id="section-3">
-            <div id="content-wrapper">
-              <div id="input-section">
-                <input
-                  type="text"
-                  placeholder="Enter Your ToDo"
-                  id="userInput"
-                />
 
-                <button id="submit">Add</button>
+          <!-- Display Section -->
+
+          <section id="home" class="content">
+            <div id="home-content">
+              <div id="input-section">
+                <input type="text" placeholder="Enter Your Todo" id="input" />
+                <button id="add-btn">Add</button>
               </div>
-              <div id="todo-task"></div>
+
+              <!-- User Todo Section  -->
+              <div id="todo">
+                <ul id="todo-list"></ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- About Section -->
+          <section id="about" class="content">
+            <div id="about-content">
+              <div id="about-home" class="description">
+                <h2>Home</h2>
+                <p>Here, You can add Your Todo.</p>
+              </div>
+              <div id="about-glance" class="description">
+                <h2>At A Glance</h2>
+                <p>Here, You can track your efficiency of your Todo work.</p>
+              </div>
+              <div id="about-ask" class="description">
+                <h2>Ask</h2>
+                <p>
+                  This is like Personal Assistent. Here, you can Chat with AI
+                  for solving any Problems.
+                </p>
+              </div>
+              <div id="about-fun" class="description">
+                <h2>Have Fun!</h2>
+              </div>
+            </div>
+          </section>
+
+          <!-- At a Glance Section  -->
+          <section id="glance" class="content">
+            <div id="glance-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              quo quis perferendis animi, optio dolorum, illum tempore
+              voluptates culpa beatae temporibus esse nemo. Amet debitis quasi
+              repellendus sunt vel! Blanditiis? At a Glance
+            </div>
+          </section>
+
+          <!-- Ask Section  -->
+          <section id="ask" class="content">
+            <div id="ask-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              quo quis perferendis animi, optio dolorum, illum tempore
+              voluptates culpa beatae temporibus esse nemo. Amet debitis quasi
+              repellendus sunt vel! Blanditiis? This is ask section
             </div>
           </section>
         </div>
