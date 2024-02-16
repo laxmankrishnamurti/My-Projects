@@ -1,9 +1,10 @@
 const input = document.querySelector("#input");
 const submit = document.querySelector("#add-btn");
 const todoList = document.querySelector("#todo-list");
-console.log(todoList);
 
-//I forgeten the rule that is :- Divide your task into multiple function. Sorry for this. Next time I'll remember this rule.
+//I forgeten the rule & that is :- Divide your task into multiple function. Sorry for this. Next time I'll remember this rule.
+
+//Remarks :- Bad Code Readability.
 
 submit.addEventListener("click", () => {
   let inputValue = input.value;

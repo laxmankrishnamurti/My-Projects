@@ -29,18 +29,18 @@
 #section-2 {
     width: 15%;
     min-height: calc(100vh - 60px);
-    background-color: #836fff;  
+    background-color: #836fff;
     padding: 1rem;
     display: flex;
     justify-content: center;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     margin: 1rem 0;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     font-size: 1.1rem;
     color: white;
@@ -48,7 +48,7 @@ nav ul li a{
     text-transform: capitalize;
 }
 
-nav ul li a::before{
+nav ul li a::before {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -59,11 +59,11 @@ nav ul li a::before{
     transition: all 0.3s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #211951;
 }
 
-nav ul li a:hover::before{
+nav ul li a:hover::before {
     width: 100%;
 }
 
@@ -79,7 +79,7 @@ nav ul li a:hover::before{
     margin: auto;
 }
 
-.content:target{
+.content:target {
     display: block;
 }
 
@@ -87,6 +87,7 @@ nav ul li a:hover::before{
     width: 100%;
     height: 100%;
     padding: 1rem;
+    overflow: hidden;
 }
 
 #input-section {
@@ -134,14 +135,13 @@ nav ul li a:hover::before{
 
 #todo-box li {
     width: 75%;
-    height: 100%;   
+    height: 100%;
     background-color: #211951;
     color: #f0f3ff;
     border-radius: 0.3rem;
     list-style-type: none;
     text-align: left;
     padding: 1rem;
-    overflow: hidden;
 }
 
 #del-btn {
@@ -165,9 +165,58 @@ nav ul li a:hover::before{
 
 .description {
     margin: 0.5rem;
-    /* color: #f0f3ff; */
 }
 
 .description h2 {
-    margin: 1rem 0 ;
+    margin: 1rem 0;
+}
+
+#ask-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.ask-box {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ask-input {
+    width: 100%;
+}
+
+#ask-input input[type="text"] {
+    width: 90%;
+    height: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    outline: none;
+    border: 2px solid #211951;
+    background-color: transparent;
+}
+
+#ask-btn-box #ask-btn {
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #836fff;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: #f0f3ff;
+    padding: 5px;
+}
+
+#ask-content {
+    background-color: brown;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    color: #f0f3ff;
 }
