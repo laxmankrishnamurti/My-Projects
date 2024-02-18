@@ -1,12 +1,13 @@
 // const APIkey = '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';
-const newkey = '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'
+// const newkey = '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'
+const keyOne = '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'
 const URL = 'https://api.openai.com/v1/chat/completions';
 
 const options = {
     method: "POST",
     headers: {
         "Content-type": "application/json",
-        "Authorization": "Bearer " + newkey,
+        "Authorization": "Bearer " + keyOne,
     },
     body: JSON.stringify({
         "model": "gpt-3.5-turbo",
@@ -39,6 +40,7 @@ function requestWithBackOff(url, option, retries = 0) {
 requestWithBackOff(URL, options)
     .then((data) => {
         console.log(data);
+        // console.log(data.messages)
     })
     .catch((error) => {
         console.error('Err : ', error);
