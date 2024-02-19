@@ -18,12 +18,31 @@
 #section-1 {
     width: 100%;
     background-color: #211951;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
 
 #main-heading {
     text-align: center;
     color: #f0f3ff;
-    padding: 1rem;
+}
+
+#today-time {
+    color: #f0f3ff;
+    font-size: 1.3rem;
+}
+
+#today-date {
+    color: #f0f3ff;
+    font-size: 1.3rem;
+}
+
+hr {
+    height: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 #section-2 {
@@ -94,7 +113,7 @@ nav ul li a:hover::before {
     width: 100%;
     height: 3rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -129,7 +148,7 @@ nav ul li a:hover::before {
     width: 100%;
     height: 3rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 5px;
 }
 
@@ -144,14 +163,36 @@ nav ul li a:hover::before {
     padding: 1rem;
 }
 
+#btn-box {
+    width: calc(100% - 75%);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 #del-btn {
-    width: 10%;
-    /* height: 100%; */
-    background-color: #e26464;
-    color: #f0f3ff;
+    width: 40%;
+    height: 100%;
+    background-color: #f56f6f;
+    color: #211951;
+    /* font-weight: 600; */
+    margin-left: 2rem;
     outline: none;
     border: none;
-    border-radius: 0.3rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#done-btn {
+    width: 40%;
+    height: 100%;
+    background-color: #83f583;
+    /* font-weight: 600; */
+    color: #211951;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
     font-size: 1rem;
     cursor: pointer;
 }
@@ -160,7 +201,6 @@ nav ul li a:hover::before {
     width: 100%;
     height: 100%;
     padding: 1rem;
-    /* background-color: #211951; */
 }
 
 .description {

@@ -14,18 +14,31 @@ submit.addEventListener("click", () => {
     newDiv.setAttribute("id", "todo-box");
 
     let li = document.createElement("li");
+    li.setAttribute('id', 'list-items')
     li.textContent = inputValue;
 
     //Delete Button
+
+    const btnBox = document.createElement('div');
+    btnBox.setAttribute('id', 'btn-box')
 
     let delBtn = document.createElement("button");
     delBtn.setAttribute("id", "del-btn");
     delBtn.setAttribute("title", "Click to Remove Todo");
     delBtn.textContent = "Remove";
 
+    //Done Button
+
+    let doneBtn = document.createElement("button");
+    doneBtn.setAttribute("id", "done-btn");
+    doneBtn.setAttribute("title", "Click to Done Todo");
+    doneBtn.textContent = "Done";
+
     //Appending all content inside ul
+    btnBox.appendChild(delBtn);
+    btnBox.appendChild(doneBtn);
     newDiv.appendChild(li);
-    newDiv.appendChild(delBtn);
+    newDiv.appendChild(btnBox);
     todoList.appendChild(newDiv);
     input.value = "";
 
@@ -34,5 +47,15 @@ submit.addEventListener("click", () => {
     delBtn.addEventListener("click", () => {
       newDiv.remove();
     });
+
+    //Marking Completed work
+
+    doneBtn.addEventListener('click', () => {
+      // let list = document.getElementById('list-items');
+      li.innerHTML = `<del>${li.innerText}</del>`
+    })
+
+
   }
 });
+
