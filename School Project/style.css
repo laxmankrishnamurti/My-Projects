@@ -176,3 +176,7 @@ nav .nav:hover::before{
     cursor: pointer;
     font-weight: 600;
 }
+
+.menu-icon {
+    display: none;
+}
