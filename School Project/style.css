@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+#header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    padding: 2px 3px;
+    width: 100px;
+}
+
+.school-info #info {
+    font-size: 1.2rem;
+} 
+
+.school-info #affi {
+    margin-top: 2px;
+    font-size: 0.8rem;
+    color: #ff0000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li{
+    position: relative;
+}
+
+.menu li, nav a{
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: #231834;
+}
+
+nav .nav::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #211951;
+    transition: all 0.3s;
+}
+
+nav .nav:hover::before{
+    width: 100%;
+}
+
+/* Add drop-down options  */
+
+.submenu {
+    position: absolute;
+    border-radius: 0.2rem;
+    width: 13rem;
+    left: 0;
+    display: none;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    animation-name: slideUp 0.2s;
+}
+
+.submenu2 {
+    position: absolute;
+    border-radius: 0.2rem;
+    width: 13rem;
+    left: 100%;
+    top: 0;
+    display: none;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu a{
+    color: #231834ce;
+}
+
+.submenu li{
+    width: 100%;
+}
+
+.submenu li:hover{
+    background-color: #FCC92F;
+}
+.menu li:hover > .submenu {
+    display: block;
+    animation: slideUp 0.3s ease;
+}
+
+.submenu li:hover > .submenu2 {
+    display: block;
+    animation: slideRight 0.3s ease;
+}
+
+
+@keyframes slideUp{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Navbar Buttons styling */
+
+.btn-container .nav-btn {
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color:#f78800d2;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #ff8c00;
+}
+
+.btn-container {
+    margin-right: 0.5rem;
+}
+
+
+#logIn {
+    background-color: #211951;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 600;
+}
