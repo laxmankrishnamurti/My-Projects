@@ -6,9 +6,13 @@
     <link rel="shortcut icon" href="../Gallary/logo.png" type="image/x-icon" />
     <title>Welcome to LMC Group, Patna</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Media/breakPoints.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <div id="page-container">
+      <!-- Section-One starts here  -->
+
       <section class="sectionOne">
         <header>
           <!-- Logo-Section Starts here  -->
@@ -20,16 +24,128 @@
               </div>
               <div class="school-info">
                 <span class="name">
-                  Lohiya Nagar Mt. Carmel High School, Patna
+                  Lohia Nagar Mt. Carmel High School, Patna
                 </span>
-                <span class="affiliate"> (Aff. to I.C.S.E upto 10+2 )</span>
+                <span class="affiliate">
+                  (Aff. to I.C.S.E upto 10+2, New Delhi)</span
+                >
               </div>
             </div>
           </div>
 
           <!-- Navigation Options starts here  -->
 
-          <nav></nav>
+          <nav class="navbar-wrapper">
+            <!-- Menu Close Icon -->
+
+            <div class="menu-close-container" onclick="hideMenu()">
+              <div class="icon-box">
+                <img src="../Icons/close.svg" alt="Close" />
+              </div>
+            </div>
+
+            <!-- Navigation menu strts here  -->
+
+            <ul class="menu">
+              <li>
+                <a href="#">
+                  <span class="menu-item-home">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>About</span>
+                  <span>
+                    <img src="../Icons/dropDown.svg" alt="Dropdown" />
+                  </span>
+                </a>
+
+                <!-- About Submenu starts here  -->
+
+                <ul class="submenu">
+                  <li><a href="#">School</a></li>
+                  <li><a href="#">Admission</a></li>
+                  <li><a href="#">Teachers</a></li>
+                  <li><a href="#">Notice Board</a></li>
+                  <li><a href="#">Policy & Procedures</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Academics</span>
+                  <span>
+                    <img src="../Icons/dropDown.svg" alt="Dropdown" />
+                  </span>
+                </a>
+
+                <!-- Academics Submenu starts here  -->
+
+                <ul class="submenu">
+                  <li><a href="#">Messages</a></li>
+                  <li><a href="#">Curriculum</a></li>
+                  <li><a href="#">Facilities</a></li>
+                  <li>
+                    <a href="#">Events</a>
+
+                    <!-- Event submenu2 starts here  -->
+
+                    <ul class="submenu2">
+                      <li><a href="#">Results</a></li>
+                      <li><a href="#">News</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Student Life</a>
+                    <ul class="submenu2">
+                      <li><a href="#">Music</a></li>
+                      <li><a href="#">Dance</a></li>
+                      <li><a href="#">Art</a></li>
+                      <li><a href="#">Sports</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Gallary</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Carrer</span>
+                  <span>
+                    <img src="../Icons/dropDown.svg" alt="Dropdown" />
+                  </span>
+                </a>
+                <ul class="submenu">
+                  <li><a href="#">Advertisement</a></li>
+                  <li><a href="#">Apply</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Navbar Button section starts here  -->
+
+            <div class="nav-btn-container">
+              <a
+                class="nav-btn enroll"
+                href="https://wikipedia.org"
+                target="_blank"
+                >Enroll</a
+              >
+              <a
+                class="nav-btn contact"
+                href="https://youtube.com"
+                target="_blank"
+                >Contact</a
+              >
+              <a class="nav-btn logIn" href="https://google.com" target="_blank"
+                >LogIn</a
+              >
+            </div>
+          </nav>
+
+          <div class="menu-btn-container" onclick="showMenu()">
+            <div class="icon-box">
+              <img src="../Icons/menu.svg" alt="Menu" />
+            </div>
+          </div>
         </header>
       </section>
     </div>
