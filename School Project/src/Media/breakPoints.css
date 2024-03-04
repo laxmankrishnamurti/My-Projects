@@ -8,9 +8,11 @@
 }
 
 /* Second Break-Point level :: 1100px  */
-/* For Tablets & for also Smart-Phones */
+/* For Tablets & also for Smart-Phones */
 
 @media screen and (max-width: 1100px) {
+
+    /* Navbar Section starts here  */
     
     .navbar-wrapper {
         min-width: 100vw;
@@ -37,7 +39,6 @@
     }
 
     .navbar-wrapper a {
-        /* background-color: aqua; */
         padding: 0.2rem 0;
         text-align: left;
         display: flex;
