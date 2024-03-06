@@ -226,3 +226,18 @@ header {
         transform: 0;
     }
 }
+
+/* Main Section starts here  */
+
+/* Hero Section starts here  */
+
+.sectionTwo {
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-color: red;
+}
+
+.hero-wrapper {
+    width: 100%;
+    height: 100%;
+}
