@@ -19,8 +19,8 @@
         min-height: 100vh;
         position: fixed;
         top: 90px;
-        background-color: rgba(65, 245, 245, 0.699);
-        backdrop-filter: blur(5px);
+        background-color: rgba(27, 253, 253, 0.836);
+        /* backdrop-filter: blur(5px); */
         display: flex;
         align-items: flex-start;
         flex-direction: column;
