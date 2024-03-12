@@ -12,7 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Color Pallate for the Website :: 
-    ORANGE = #FBA834
+    ORANGE = #FBA834 #ff9a0b  #ff8800(On Hover)
     BLUE = #333A73
     SKYBLUE = #387ADF
     AQUA = #50C4ED
@@ -101,7 +101,8 @@ header {
 .navbar-wrapper a {
     text-decoration: none;
     padding: 1rem 1.5rem;
-    color: #0F2A5B;
+    color: #333a73;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +128,8 @@ header {
 .nav-btn-container .nav-btn {
     width: 6rem;    
     height: 3rem;
-    background-color: rgb(255, 141, 1);
+    /* background-color: rgb(255, 141, 1); */
+    background-color: #ff9a0b;
     outline: none;
     border: none;
     border-radius: 0.2rem;
@@ -140,11 +142,13 @@ header {
 }
 
 .nav-btn:hover {
-    background-color: rgb(255, 123, 0);
+    background-color: #ff8800;
 }
 
 .nav-btn-container .logIn {
-    background-color: rgb(33, 25, 81);
+    /* background-color: rgb(33, 25, 81); */
+    /* background-color: #333a73; */
+    background-color: #2D1D54;
     color: #ffffff;
 }
 
@@ -243,4 +247,188 @@ header {
         opacity: 1;
         transform: 0;
     }
+}
+
+/* Main Section starts here  */
+
+/* Section two starts here  */
+
+.sectionTwo {
+    width: 100%;
+    height: 529px;
+    background-image: url(../Gallary/Hero/image-16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-container {
+    position: absolute;
+    top: 18%;
+    left: 8%;
+}
+
+.hero-container .description {
+    color: #ffffff;
+    /* text-shadow: 0px 0px 0.5px black; */
+}
+
+.hero-container .team,
+.hero-container .mission {
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-shadow: 0 0 1px black;
+}
+
+.hero-container .know {
+    font-size: 8rem; 
+    font-weight: 600;
+    text-shadow: 0 0 1px black;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-container .hero-button {
+    margin-left: 10px;
+    width: 7rem;
+    height: 3rem;
+    padding: 5px 3px;
+    margin-top: 0.8rem;
+    background-color: #ff9a0b;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.hero-container .hero-button a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.hero-container .hero-button:hover {
+    background-color: #ff8800;
+}
+
+/* Section Three starts here  */
+
+.sectionThree {
+    width: 100%;
+    height: 280px;
+}
+
+.community-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #333a73; */
+    background-color: #2D1D54;
+}
+
+.community-container .community {
+    width: 15%;
+    height: 80%;
+    border: 2px solid #9ca4e5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.community:hover {
+    box-shadow: 1px 1px 10px #9ca4e5;
+}
+
+.community-container .welcome-box{
+    width: 20%;
+    height: 80%;    
+}
+
+.community-container .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.community-container .logo-container i{
+    font-size: 3rem;
+    color: #ff9a0b;
+    margin: 1rem;
+}
+
+.community-container .community span {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.community-container .community .com-des {
+    color: #9ca4e5;
+    margin-top: 0.5rem;
+}
+
+.welcome-box .welcome {
+    display: inline-block;
+    color: #ff9a0b;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+.welcome-box .discover{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+/* Section Four starts here  */
+
+.sectionFour {
+    width: 100%;
+    height: 550px;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.division-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.school-division {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.school-heading {
+    font-size: 2rem;
+    text-align: center;
+    color: #2D1D54;
+    font-weight: 600;
+}
+
+.school-heading .wel-mess {
+    color: #ff9a0b;
+    font-weight: 600;
+}
+
+.school-division .school-cap {
+    color: #2D1D54;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
