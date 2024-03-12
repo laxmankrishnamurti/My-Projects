@@ -255,7 +255,7 @@ header {
 
 .sectionTwo {
     width: 100%;
-    height: 529px;
+    height: 565px;
     background-image: url(../Gallary/Hero/image-16.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,24 +268,19 @@ header {
     left: 8%;
 }
 
-.hero-container .description {
-    color: #ffffff;
-    /* text-shadow: 0px 0px 0.5px black; */
-}
-
 .hero-container .team,
 .hero-container .mission {
     font-size: 3rem;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
+    color: #ffffff;
     text-shadow: 0 0 1px black;
 }
 
 .hero-container .know {
-    font-size: 8rem; 
-    font-weight: 600;
-    text-shadow: 0 0 1px black;
-    font-family: "Roboto", sans-serif;
+    font-size: 9rem; 
+    font-weight: 900;
+    color: #ffffff;
 }
 
 .hero-container .hero-button {
@@ -374,7 +369,7 @@ header {
 
 .community-container .community .com-des {
     color: #9ca4e5;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .welcome-box .welcome {
@@ -395,40 +390,45 @@ header {
 
 .sectionFour {
     width: 100%;
-    height: 550px;
-    margin-top: 2rem;
-    padding: 1rem;
+    height: 530px;
+    margin-top: 1rem;
 }
 
-.division-container {
+.sectionFour .school-division {
     width: 90%;
-    height: 100%;
+    padding: 1rem;
     margin: 0 auto;
 }
 
-.school-division {
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    border: 1px solid black;
-}
-
-.school-heading {
-    font-size: 2rem;
-    text-align: center;
+.school-info {
     color: #2D1D54;
-    font-weight: 600;
+    text-align: center;
 }
 
-.school-heading .wel-mess {
+.school-info .school-heading {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.school-division .school-heading .wel-mess {
+    display: inline-block;
     color: #ff9a0b;
-    font-weight: 600;
+    margin: 1rem 0;
 }
 
-.school-division .school-cap {
-    color: #2D1D54;
-    text-align: center;
-    margin-top: 1rem;
+.school-info .school-cap {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 300;
+}
+
+/* School-division video starts here  */
+
+.school-division .division {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.division .intro{
+    border-radius: 1rem;
 }
