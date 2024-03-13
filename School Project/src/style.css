@@ -400,12 +400,12 @@ header {
     margin: 0 auto;
 }
 
-.school-info {
+.div-school-info {
     color: #2D1D54;
     text-align: center;
 }
 
-.school-info .school-heading {
+.div-school-info .school-heading {
     font-size: 1.8rem;
     font-weight: 900;
 }
@@ -416,7 +416,7 @@ header {
     margin: 1rem 0;
 }
 
-.school-info .school-cap {
+.div-school-info .school-cap {
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -431,4 +431,171 @@ header {
 
 .division .intro{
     border-radius: 1rem;
+}
+
+/* Section-5 starts here (Student Section) */
+
+.sectionFive {
+    /* background-color: #2D1D54; */
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.student-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.student-heading span {
+    color: #ffffff;
+    font-weight: 900;
+    background-color: #2D1D54;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 10px #2D1D54;
+}
+
+.student-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1rem 0;
+}
+
+.arrow {
+    width: 3rem ;
+    height: 3rem;
+    padding: 1rem;
+    background-color: #2D1D54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+
+.arrow i {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 5px 3px ;
+}
+
+.arrow:hover{
+    background-color: #2D1D54;
+    border-radius: 50%;
+}
+
+.student-list-wrapper {
+    width: 1020px;
+    padding: 1rem 0rem;
+    overflow: hidden;
+}
+
+.student-list-wrapper .profile {
+    display: flex;
+    transition: all 0.3s ease;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+.profile .images {
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Section-Six starts here (Footer Section) */
+
+.sectionSix {
+    width: 100%;
+    background-color: #2D1D54;
+    color: #ffffff;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Link section  */
+
+.links .link {
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.links ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 5px 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff9a0b;
+}
+
+.footer a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #ff9a0b;
+    transition: all 0.3s ease;
+}
+
+.footer a:hover::before{
+    width: 100%;
+}
+
+/* Get in touch section  */
+
+.follow .touch {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.footer-logo {
+    margin-top: 1rem;
+}
+
+.footer-logo .logo {
+    width: 40px;
+}
+
+.contact span {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-box {
+    margin-top: 1rem;
+}
+
+.contact-box ul {
+    list-style-type: none;
+}
+
+.footer .copyright {
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
 }
