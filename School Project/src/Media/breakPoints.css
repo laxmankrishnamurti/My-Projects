@@ -2,9 +2,13 @@
 /* For Medium-size Laptops */
 
 @media screen and (max-width: 1300px) {
+
+    /* Section-One Starts here  */
+
     .nav-btn-container .enroll , .nav-btn-container .contact {
         display: none;
     }
+
 }
 
 /* Second Break-Point level :: 1100px  */
@@ -20,7 +24,8 @@
         min-height: 100vh;
         position: fixed;
         top: 90px;
-        background-color: rgba(27, 253, 253, 0.836);
+        /* background-color: rgba(0, 255, 255, 0.76); */
+        background-image: linear-gradient(to bottom, violet, AQUA, violet);
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -95,12 +100,128 @@
         padding: 10px 5px;
     }
 
+    /* Section-Four Starts here (Division Section) */
+
+    .division{
+        width: 100%;
+    }
+
+    .division .intro-box {
+        width: 48%;
+    }
+
+    .intro-box .intro {
+        width: 100%;
+    }
 }
 
-/* Third Break-Point Level :: 640px  */
+/* Third BreakPoint Level :: 900px */
+/* For content Adjustment  */
+
+@media screen and (max-width: 900px) {
+    .division {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .division .intro-box {
+        width: 85%;
+    }
+
+    .division .intro {
+        height: 400px;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Fourth BreakPoint Level :: 800 */
+
+@media screen and (max-width: 800px) {
+
+    /* Section Two starts here  */
+
+    .hero-container .team,
+    .hero-container .mission {
+        font-size: 2.5rem;
+    }
+
+    .hero-container .know {
+        font-size: 7rem;
+    }
+
+    /* Section Three starts here  */
+
+    .sectionThree {
+        max-width: 100%;
+        height: 800px;
+    }
+
+    .community-container{
+        padding: 0.5rem;
+        flex-direction: column;
+    }
+    
+    .community-container a{
+        width: 100%;
+        height: 23%;
+        border: 2px solid pink;
+        border-radius: 0.5rem;
+        text-decoration: none;
+    }
+
+    .community-container .community {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .welcome-box {
+        display: none;
+    }
+
+    /* Section-Four starts here  */
+
+    .div-school-info .school-heading {
+        font-size: 1.5rem;
+    }
+
+    .div-school-info .school-cap {
+        font-size: 1rem;
+    }
+
+    /* Section-Five starts here  */
+
+    .student-heading {
+        font-size: 1.5rem;
+    }
+
+    .student-list-wrapper {
+        width: 350px;
+    }
+
+    /* Section-Six Starts here (Footer Section) */
+
+    .footer-container {
+        padding: 1rem;
+    }
+
+    .footer-container .footer-division {
+        width: 30%;
+    }
+
+    .footer .copyright {
+        font-size: 1.1rem;
+    }
+}
+
+/* Fifth Break-Point Level :: 640px  */
 /* For Smart-Phones  */
 
 @media screen and (max-width: 640px) {
+    
+    /* Section-One starts here  */
+    
     .school-info .name {
         font-size: 1rem;
     }
@@ -110,7 +231,160 @@
     }
 
     .navbar-wrapper {
-        top: 70px;
+        top: 74px;
     }
 
+    /* Section-Two starts here  */
+
+    .sectionTwo {
+        height: 600px;
+        background-image: linear-gradient(to bottom, violet, AQUA, violet);
+    }
+
+    .hero-container {
+        top: 30%;
+        left: 5%;
+    }
+ 
+    .hero-container .know{
+        font-size: 4rem;
+    }
+
+    .hero-container .hero-button {
+        background-color: #2D1D54;
+        margin-left: 0;
+    }
+
+    /* Section-Three starts here (Comminity section)  */
+
+    /* This is same as Break-Point :: 800px  */
+
+    /* Section-Four starts here (Division Section) */
+
+    .sectionFour {
+        width: 100%;
+        margin-top: 0;
+        padding: 0.5rem;
+    }
+
+    .school-division {
+        width: 100%;
+        padding: 0;
+    }
+
+    .div-school-info .school-heading {
+        font-size: 1.4rem;
+    }
+
+    .division {
+        margin-top: 1rem;
+    }
+
+    .division .intro-box {
+        width: 95%;
+    }
+
+    .division .intro {
+        height: 200px;
+    }
+
+    /* Section-Five starts here (Student section) */
+
+    .sectionFive {
+        padding: 5px;
+        /* background-color: red; */
+    }
+
+    .student-heading {
+        font-size: 1rem;
+        margin: 1rem 0rem;
+    }
+
+    .student-wrapper {
+        gap: 0.5rem;
+    }
+
+    .arrow {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .arrow i {
+        font-size: 1rem;
+    }
+
+    .student-list-wrapper .profile {
+        gap: 5px;
+        margin-left: 0px;
+    }
+
+    .profile .images {
+        width: 250px;
+    }
+    
+    /* Section-Six starts here (footer section) */
+    
+    .sectionSix {
+        max-width: 100%;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container .footer-division{
+        width: 100%;
+    }
+
+    .links .link {
+        font-size: 1.7rem;
+    }
+
+    .links ul {
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .footer-logo{
+        margin: 0.7rem 0rem;
+    }
+
+    .footer-logo .youtube-logo {
+        width: 2.2rem;
+    }
+
+    .contact-box {
+        margin-top: 0.7rem;
+    }
+
+    hr.ruler {
+        width: 95%;
+        margin: auto;
+        border: 1px solid #ff9a0b;
+    }
+
+    .footer .copyright {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 325px) {
+    /* Section-Two starts here  */
+
+    .sectionTwo .team, 
+    .sectionTwo .mission{
+        font-size: 1.5rem;
+    }
+
+    .sectionTwo .know {
+        font-size: 3.5rem;
+    }
+
+    /* Section-Five starts here  */
+
+    .sectionFive .student-heading {
+        font-size: 0.9rem;
+    }
 }

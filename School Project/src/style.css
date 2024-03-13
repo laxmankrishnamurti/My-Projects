@@ -31,6 +31,8 @@ body, html {
     min-height: 100vh;
 }
 
+/* Section-One starts here  */
+
 .section-one {
     width: 100%;
     max-height: 90px;
@@ -146,8 +148,6 @@ header {
 }
 
 .nav-btn-container .logIn {
-    /* background-color: rgb(33, 25, 81); */
-    /* background-color: #333a73; */
     background-color: #2D1D54;
     color: #ffffff;
 }
@@ -256,7 +256,8 @@ header {
 .sectionTwo {
     width: 100%;
     height: 565px;
-    background-image: url(../Gallary/Hero/image-16.jpg);
+    /* background-image: url(../Gallary/Hero/image-16.jpg); */
+    background-image: linear-gradient(to bottom, violet, AQUA, violet);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -289,9 +290,11 @@ header {
     height: 3rem;
     padding: 5px 3px;
     margin-top: 0.8rem;
-    background-color: #ff9a0b;
+    /* background-color: #ff9a0b; */
+    /* background-color: #2D1D54; */
+    background-image: linear-gradient(to bottom, violet, AQUA);
     cursor: pointer;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     transition: all 0.3s ease;
 }
 
@@ -303,13 +306,15 @@ header {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #2D1D54;
     font-weight: 500;
     font-size: 1.1rem;
 }
 
 .hero-container .hero-button:hover {
     background-color: #ff8800;
+    box-shadow: 0px 0px 10px  black;
 }
 
 /* Section Three starts here  */
@@ -323,31 +328,33 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: #333a73; */
     background-color: #2D1D54;
 }
 
-.community-container .community {
+.community-container a {
     width: 15%;
     height: 80%;
+    text-decoration: none;
     border: 2px solid #9ca4e5;
     border-radius: 0.5rem;
-    padding: 1rem;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.community:hover {
+.community-container .community {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.com-anchor:hover{
     box-shadow: 1px 1px 10px #9ca4e5;
 }
 
-.community-container .welcome-box{
-    width: 20%;
-    height: 80%;    
-}
 
 .community-container .logo-container {
     width: 100%;
@@ -372,6 +379,10 @@ header {
     margin-top: 1rem;
 }
 
+.community-container .welcome-box{
+    width: 20%;
+    /* height: 80%;   */
+}
 .welcome-box .welcome {
     display: inline-block;
     color: #ff9a0b;
@@ -390,7 +401,6 @@ header {
 
 .sectionFour {
     width: 100%;
-    height: 530px;
     margin-top: 1rem;
 }
 
@@ -408,25 +418,24 @@ header {
 .div-school-info .school-heading {
     font-size: 1.8rem;
     font-weight: 900;
+    margin: 1rem 0;
 }
 
 .school-division .school-heading .wel-mess {
     display: inline-block;
     color: #ff9a0b;
-    margin: 1rem 0;
 }
 
 .div-school-info .school-cap {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
-/* School-division video starts here  */
-
-.school-division .division {
+.division {
+    width: 100%;
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .division .intro{
@@ -436,7 +445,7 @@ header {
 /* Section-5 starts here (Student Section) */
 
 .sectionFive {
-    /* background-color: #2D1D54; */
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
@@ -459,6 +468,7 @@ header {
 }
 
 .student-wrapper {
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -528,7 +538,6 @@ header {
 
 .links .link {
     font-size: 2rem;
-    text-decoration: underline;
     font-weight: 600;
 }
 
@@ -570,7 +579,6 @@ header {
 .follow .touch {
     font-size: 2rem;
     font-weight: 600;
-    text-decoration: underline;
 }
 
 .footer-logo {
@@ -578,13 +586,16 @@ header {
 }
 
 .footer-logo .logo {
-    width: 40px;
+    width: 2rem;
+}
+
+.footer-logo .youtube-logo {
+    width: 2.2rem;
 }
 
 .contact span {
     font-size: 2rem;
     font-weight: 600;
-    text-decoration: underline;
 }
 
 .contact-box {
@@ -596,6 +607,8 @@ header {
 }
 
 .footer .copyright {
-    padding: 2rem 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
     font-size: 1.2rem;
 }
