@@ -252,6 +252,15 @@ header {
 
 /* Main Section starts here  */
 
+.content-section {
+    width: 100%;
+}
+
+#main-content {
+    width: 100%;
+}
+
+
 /* Section two starts here  */
 
 .sectionTwo {
