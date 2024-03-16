@@ -1,8 +1,93 @@
-.about-section {
-    width: 100%;
-    background-color: red;
+/* About Section  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
-.about-image img {
+.about-section {
+    width: 100%;
+    margin: 2rem 0rem;
+}
+
+.about-school-wrapper {
+    width: 100%;
+}
+
+.about-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image .about-logo {
     width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgb(119, 193, 247);
+}
+
+.about-school {
+    width: 100%;
+}
+
+.about-school .about-heading {
+    text-align: center;
+    margin: 2rem 0rem;
+    color: #2D1D54;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.about-school .about-welcome {
+    color: #ff9a0b;
+}
+
+hr.about-ruler {
+    border: 2px solid orange;
+    width: 80%;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.school-description {
+    margin-top: 2rem;
+    padding: 0% 10%;
+    line-height: 2rem;
+    color: #2D1D54;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.school-description h2 {
+    margin: 1rem 0rem;
+    color: #2D1D54;
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+    .about-school .about-heading{
+        font-size: 1.5rem;
+    }
+
+    hr.about-ruler {
+        width: 90%;
+    }
+    
+    .school-description {
+        padding: 0% 5%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about-school .about-heading {
+        font-size: 1.3rem;
+        padding: 0% 5%;
+    }
 }

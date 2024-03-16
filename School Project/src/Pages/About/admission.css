@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.admission-section {
+    margin-top: 2rem;
+}
+
+.admission-section, .about-admission-wrapper {
+    width: 100%;
+}
+
+.admission-headlines {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 8%;
+}
+
+.admission-headlines .online-heading {
+    font-size: 1.5rem;
+    color: #2D1D54;
+    font-weight: 500;
+}
+
+.admission-headlines #form-status-btn {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #2D1D54;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.form-container .fieldset {
+    width: 90%;
+}
