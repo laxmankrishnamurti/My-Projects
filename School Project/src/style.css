@@ -61,7 +61,7 @@ header {
     align-items: center;
 }
 
-.logo a {
+.logo .school-logo {
     display: inline-block;
     width: 100%;
     height: 90px;
@@ -137,7 +137,6 @@ header {
 .nav-btn-container .nav-btn {
     width: 6rem;    
     height: 3rem;
-    /* background-color: rgb(255, 141, 1); */
     background-color: #ff9a0b;
     outline: none;
     border: none;
@@ -272,7 +271,6 @@ header {
 .sectionTwo {
     width: 100%;
     height: 565px;
-    /* background-image: url(../Gallary/Hero/image-16.jpg); */
     background-image: linear-gradient(to bottom, violet, AQUA, violet);
     background-repeat: no-repeat;
     background-size: cover;
@@ -302,12 +300,10 @@ header {
 
 .hero-container .hero-button {
     margin-left: 10px;
-    width: 7rem;
+    width: 10rem;
     height: 3rem;
     padding: 5px 3px;
     margin-top: 0.8rem;
-    /* background-color: #ff9a0b; */
-    /* background-color: #2D1D54; */
     background-image: linear-gradient(to bottom, violet, AQUA);
     cursor: pointer;
     border-radius: 0.3rem;
@@ -329,8 +325,8 @@ header {
 }
 
 .hero-container .hero-button:hover {
-    background-color: #ff8800;
-    box-shadow: 0px 0px 10px  #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px #000000;
 }
 
 /* Section Three starts here  */
