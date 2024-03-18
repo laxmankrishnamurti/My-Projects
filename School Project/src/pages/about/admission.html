@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./admission.css" />
+  </head>
+  <body>
+    <section class="admission-section">
+      <div class="about-admission-wrapper">
+        <!-- Admission headlines  -->
+
+        <div class="admission-headlines">
+          <p class="online-heading">Online Admission</p>
+          <button id="form-status-btn">Check Your Form Status</button>
+        </div>
+
+        <!-- Form Section starts here  -->
+
+        <div class="form-container">
+          <form action="#" class="form">
+            <!-- Basic Info Section  -->
+
+            <fieldset class="fieldset student-field">
+              <legend class="legend">
+                Basic Info
+                <span><i class="fa-solid fa-user-graduate"></i></span>
+              </legend>
+
+              <!-- Select Class  -->
+
+              <div class="input-field">
+                <label for="classname">Class </label>
+                <select name="classname" id="classname" required>
+                  <option value="Select">Select</option>
+                  <option value="Nursary">Nursary</option>
+                  <option value="L.KG">L.KG</option>
+                  <option value="U.KG">U.KG</option>
+                  <option value="I">I</option>
+                  <option value="II">II</option>
+                  <option value="III">III</option>
+                  <option value="IV">IV</option>
+                  <option value="V">V</option>
+                  <option value="VI">VI</option>
+                  <option value="VII">VII</option>
+                  <option value="VIII">VIII</option>
+                  <option value="IX">IX</option>
+                  <option value="X">X</option>
+                  <option value="XI">XI</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required />
+              </div>
+              <div class="input-field">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" required />
+              </div>
+              <div class="input-field">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                  <option value="select">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required />
+              </div>
+              <div class="input-field">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" required />
+              </div>
+              <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="input-field">
+                <label for="blood">Blood Group</label>
+                <select name="blood" id="blood" required>
+                  <option value="select">Select</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label for="student-photo">Student Photo</label>
+                <input type="file" id="student-photo" required />
+              </div>
+            </fieldset>
+
+            <!-- Parent details  -->
+
+            <fieldset class="fieldset parent-field">
+              <legend class="legend">
+                Parent Details
+                <span><i class="fa-solid fa-user-group"></i></span>
+              </legend>
+
+              <!-- Student's father details  -->
+
+              <div class="input-field">
+                <label for="fatname">Father Name</label>
+                <input type="text" id="fatname" required />
+              </div>
+              <div class="input-field">
+                <label for="fatphone">Father Phone</label>
+                <input type="tel" pattern="\d{10}" id="fatphone" required />
+              </div>
+              <div class="input-field">
+                <label for="fatoccu">Father Occupation</label>
+                <input type="text" id="fatoccu" required />
+              </div>
+              <div class="input-field">
+                <label for="fatphoto">Father Photo</label>
+                <input type="file" id="fatphoto" required />
+              </div>
+
+              <!-- Student's mother details  -->
+
+              <div class="input-field">
+                <label for="motname">Mother Name</label>
+                <input type="text" id="motname" required />
+              </div>
+              <div class="input-field">
+                <label for="motphone">Mother Phone</label>
+                <input type="tel" pattern="\d{10}" id="motphone" required />
+              </div>
+              <div class="input-field">
+                <label for="motoccu">Mother Occupation</label>
+                <input type="text" id="motoccu" required />
+              </div>
+              <div class="input-field">
+                <label for="mot-photo">Mother Photo</label>
+                <input type="file" id="mot-photo" required />
+              </div>
+            </fieldset>
+
+            <!-- Guardian details  -->
+
+            <fieldset class="fieldset guardian-field">
+              <legend class="legend">
+                Guardian Details <span><i class="fa-solid fa-users"></i></span>
+              </legend>
+
+              <div class="guardian-relation">
+                <label class="guard-label" class="guard-label"
+                  >If Guardian is :
+                </label>
+                <input
+                  type="radio"
+                  id="guard-rel-fat"
+                  name="guardian-relation"
+                />
+                <label for="guard-rel-fat" class="guard-label">Father</label>
+                <input
+                  type="radio"
+                  id="guard-rel-mot"
+                  name="guardian-relation"
+                />
+                <label for="guard-rel-mot" class="guard-label">Mother</label>
+                <input
+                  type="radio"
+                  id="guard-rel-other"
+                  name="guardian-relation"
+                />
+                <label for="guard-rel-other" class="guard-label">Other</label>
+              </div>
+
+              <div class="input-field">
+                <label for="guard-name">Guardian Name</label>
+                <input type="text" id="guard-name" required />
+              </div>
+              <div class="input-field">
+                <label for="guard-rel">Guardian Relation</label>
+                <input type="text" id="guard-rel" required />
+              </div>
+              <div class="input-field">
+                <label for="guard-email">Guardian Email</label>
+                <input type="email" id="guard-email" required />
+              </div>
+              <div class="input-field">
+                <label for="guard-phone">Guardian Phone</label>
+                <input type="tel" id="guard-phone" required />
+              </div>
+              <div class="input-field">
+                <label for="guard-occu">Guardian Occupation</label>
+                <input type="text" id="guard-occu" required />
+              </div>
+              <div class="input-field">
+                <label for="guard-photo">Guardian Photo</label>
+                <input type="file" id="guard-photo" required />
+              </div>
+              <div class="input-field guard-addr">
+                <label for="guard-addr">Guardian Address</label>
+                <input type="text" id="guard-addr" required />
+              </div>
+            </fieldset>
+
+            <!-- Student-Address details  -->
+
+            <fieldset class="fieldset student-addr-field">
+              <legend class="legend">
+                Student Address Details
+                <span><i class="fa-solid fa-location-dot"></i></span>
+              </legend>
+
+              <div class="student-address">
+                <!-- Current Address section  -->
+
+                <div class="current-addr address-box">
+                  <div class="current-checkbox addr-checkbox">
+                    <input type="checkbox" id="current-check" required />
+                    <label for="current-check"
+                      >If Guardian Address is Current Address</label
+                    >
+                  </div>
+                  <div class="current-input addr-input">
+                    <label for="current-addr-box">Current Address</label>
+                    <textarea
+                      name="current-address"
+                      id="current-addr-box"
+                      cols="30"
+                      rows="10"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <!-- Permanent Address section  -->
+
+                <div class="permanent-addr address-box">
+                  <div class="permanent-checkbox addr-checkbox">
+                    <input type="checkbox" id="permanent-check" required />
+                    <label for="permanent-check"
+                      >If Guardian Address is Permanent Address</label
+                    >
+                  </div>
+                  <div class="permanent-input addr-input">
+                    <label for="parmanent-addr-box"> Permanent Address </label>
+                    <textarea
+                      name="current-address"
+                      id="current-addr-box"
+                      cols="30"
+                      rows="10"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Miscellaneous details about the Student  -->
+
+            <fieldset class="fieldset Miscellaneous-field">
+              <legend class="legend">
+                Miscellaneous Details
+                <span><i class="fa-solid fa-cloud"></i></span>
+              </legend>
+              <div class="miscellaneous-container">
+                <!-- National Details  -->
+
+                <div class="national">
+                  <label for="national-identification"
+                    >National Identification Number</label
+                  >
+                  <input type="text" id="national-identification" />
+                </div>
+
+                <!-- Previous School detials  -->
+
+                <div class="prev-school-container">
+                  <div class="prev-school-details prev-container">
+                    <label for="prev-detail">Previous School Details</label>
+                    <textarea
+                      name="prev-detail"
+                      id="prev-detail"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                  <div class="notes-container prev-container">
+                    <label for="notes">Notes</label>
+                    <textarea
+                      name="notes"
+                      id="notes"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Uploading Documents  -->
+
+            <fieldset class="fieldset document-upload">
+              <legend class="legend">
+                Upload Documents
+                <span><i class="fa-solid fa-folder"></i></span>
+              </legend>
+
+              <div class="document-container">
+                <label for="upload"
+                  >Documents (
+                  <span class="upload-text">
+                    To upload multiple documents compress it in a single file
+                    then upload it
+                  </span>
+                  )</label
+                >
+                <input type="file" id="upload" required />
+              </div>
+            </fieldset>
+
+            <button class="form-submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/d7a13f466d.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

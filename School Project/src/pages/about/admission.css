@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.admission-section {
+    margin-top: 2rem;
+}
+
+.admission-section, .about-admission-wrapper {
+    width: 100%;
+}
+
+.admission-headlines {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 8%;
+}
+
+.admission-headlines .online-heading {
+    font-size: 1.5rem;
+    color: #2D1D54;
+    font-weight: 900;
+}
+
+.admission-headlines #form-status-btn {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #2D1D54;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-container {
+    width: 100%;
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container .form {
+    width: 85%;
+}
+
+.form .fieldset {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form .legend {
+    display: inline-block;
+    color: #ff9a0b;
+    padding: 3px 5px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 0px 7px;
+}
+
+.form label {
+    display: block;
+    color: #2D1D54;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.fieldset .input-field {
+    width: 24%;
+    margin: 5px;
+    padding: 0.3rem;
+}
+
+.input-field select {
+    width: 100%;
+    height: 2.2rem;
+    border-radius: 0.2rem;
+    outline: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0px 5px;
+    border: 1px solid #2D1D54;
+    background-color: #2D1D54;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.input-field option {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.input-field input {
+    width: 100%;
+    height: 2.2rem;
+    outline: none;
+    font-weight: 500;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border: 1px solid #2D1D54;
+    border-radius: 0.2rem;
+}
+
+.input-field input:focus {
+    border: 1px dotted #2D1D54;
+}
+
+.input-field input[type="file"]{
+    padding: 6px 5px;
+    color: #ff9a0b;
+    cursor: pointer;
+}
+
+.guardian-field .guardian-relation {
+    width: 100%;
+    display: flex;
+    margin-left: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.guardian-relation input[type="radio"] {
+    width: 15px;
+    margin: 0.6rem 0.2rem;
+}
+
+.guardian-relation .guard-label {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.guardian-field .guard-addr {
+    width: 49%;
+}
+
+/* Student address starts here  */
+
+.student-addr-field .student-address {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-address .address-box {
+    width: 48%;
+}
+
+.address-box .addr-checkbox {
+    display: flex;
+}
+
+
+.addr-checkbox label {
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.address-box .addr-input {
+    margin-top: 1rem;
+}
+
+.addr-input textarea {
+    width: 100%;
+    height: 2.2rem;
+    outline: none;
+    font-weight: 500;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border: 1px solid #2D1D54;
+    border-radius: 0.2rem;
+}
+
+.addr-input textarea:focus {
+    border: 1px dotted #2D1D54;
+}
+
+/* Miscellaneous Details starts here  */
+
+.miscellaneous-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.national input[type="text"] {
+    width: 30%;
+    height: 2.2rem;
+    outline: none;
+    font-weight: 500;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border: 1px solid #2D1D54;
+    border-radius: 0.2rem;
+}
+
+.national input[type="text"]:focus {
+    border: 1px dotted #2D1D54;
+}
+
+.miscellaneous-container .prev-school-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev-school-container {
+    width: 100%;
+}
+
+.prev-school-container .prev-container {
+    width: 48%;
+}
+
+.prev-container textarea {
+    width: 100%;
+    height: 2.2rem;
+    outline: none;
+    font-weight: 500;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border: 1px solid #2D1D54;
+    border-radius: 0.2rem;
+}
+
+/* Uploading Documents starts here */
+
+.fieldset .document-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.document-container .upload-text {
+    font-size: 0.9rem;
+    color: red;
+}
+
+.document-container input[type="file"]{
+    width: 48%;
+    height: 2.2rem;
+    outline: none;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #2D1D54;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    transition: all .3s ease;
+}
+
+input[type="file"]:hover {
+    background: #ff9a0b;
+    color: #2D1D54;
+}
+
+/* Form Submit button starts here  */
+
+.form .form-submit-btn {
+    width: 10%;
+    height: 3%;
+    background-color: #2D1D54;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.form .form-submit-btn:hover {
+    transform: translateX(2px);
+}
