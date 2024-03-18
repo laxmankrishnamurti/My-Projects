@@ -274,8 +274,8 @@ input[type="file"]:hover {
 /* Form Submit button starts here  */
 
 .form .form-submit-btn {
-    width: 10%;
-    height: 3%;
+    width: 10rem;
+    height: 3rem;
     background-color: #2D1D54;
     color: #ffffff;
     outline: none;
@@ -286,4 +286,8 @@ input[type="file"]:hover {
     font-weight: 900;
     cursor: pointer;
     transition: all .3s ease;
+}
+
+.form .form-submit-btn:hover {
+    border-radius: 2rem;
 }

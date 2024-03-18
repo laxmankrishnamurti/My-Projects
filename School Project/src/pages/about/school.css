@@ -74,8 +74,8 @@ hr.about-ruler {
     margin-left: 10%;
     margin-top: 1rem;
     text-decoration: none;
-    width: 10%;
-    padding: 1rem;
+    width: 10rem;
+    height: 3rem;
     border-radius: 0.2rem;
     background-color: #2D1D54;
     color: #ffffff;
@@ -83,6 +83,11 @@ hr.about-ruler {
     justify-content: center;
     align-items: center;
     font-weight: 900;
+    transition: all .3s ease;
+}
+
+.about-school .join-link:hover{
+    border-radius: 2rem;
 }
 
 
