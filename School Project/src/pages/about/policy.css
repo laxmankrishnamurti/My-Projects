@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.policy-section, .policy-section-wrapper {
+    width: 100%;
+}
+
+.policy-section {
+    margin: 2rem 0rem;
+}
+
+.policy-section-wrapper {
+    padding: 0% 15%;
+}
+
+.policy-box {
+    width: 100%;
+}
+
+.policy-box .policy-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #2D1D54;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.policy-box p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #2D1D54;
+    line-height: 2rem;
+}
+
+.policy-box a {
+    text-decoration: none;
+    color: #ff9a0b;
+    font-weight: 900;
+}
+
+.policy-box a > i {
+    margin: 0 1rem;
+    transition: all .3s ease;
+}
+
+.policy-box a:hover > i {
+    transform: translateX(5px);
+}
+
+/* Table starts here  */
+
+.table-wrapper {
+    margin: 2rem 0rem;
+}
+
+.table-wrapper table {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-color: #2D1D54;
+    background: #2D1D54;
+    color: #ffffff;
+}
+
+table th {
+    padding: 0.5rem;
+    border-color: #2D1D54;
+    border-radius: 0.5rem;
+}
+
+table td {
+    padding: 0.5rem;    
+    border-color: #2D1D54;
+    border-radius: 0.5rem;
+}
+
+.policy-box .down {
+    background-color: red;
+    margin-top: 5rem;
+}
+
+
+/* Responsive code starts here  */
+
+@media screen and (max-width:640px) {
+    .policy-section-wrapper {
+        padding: 0% 5%;
+    }
+}
