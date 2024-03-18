@@ -24,7 +24,9 @@
           <div class="logo-container">
             <div class="logo-wrapper">
               <div class="logo">
-                <img src="./Assets/Social/logo.png" alt="School-Logo" />
+                <a href="./index.html">
+                  <img src="./Assets/Social/logo.png" alt="School-Logo" />
+                </a>
               </div>
               <div class="school-info">
                 <span class="name">
@@ -130,8 +132,8 @@
             <div class="nav-btn-container">
               <a
                 class="nav-btn enroll"
-                href="https://wikipedia.org"
-                target="_blank"
+                href="#"
+                onclick="loadPages('./pages/about/admission.html')"
                 >Enroll</a
               >
               <a
@@ -352,7 +354,12 @@
             <div class="links footer-division">
               <span class="link">Links</span>
               <ul>
-                <li><a href="#">Admission</a></li>
+                <li>
+                  <a 
+                    href="#" 
+                    onclick="loadPages('./pages/about/admission.html')">Admission
+                  </a>
+                </li>
                 <li><a href="#">Notice Board</a></li>
                 <li><a href="#">Curriculum</a></li>
                 <li><a href="#">Events</a></li>

@@ -42,7 +42,8 @@
 
 .form-container {
     width: 100%;
-    margin: 2rem 0rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
 }
@@ -56,6 +57,7 @@
     margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 0.5rem;
 }
 
 .form .legend {
@@ -230,6 +232,10 @@
     border-radius: 0.2rem;
 }
 
+.prev-container textarea:focus {
+    border: 1px dotted #2D1D54;
+}
+
 /* Uploading Documents starts here */
 
 .fieldset .document-container {
@@ -274,6 +280,7 @@ input[type="file"]:hover {
     color: #ffffff;
     outline: none;
     border: none;
+    margin-top: 1rem;
     font-size: 1rem;
     border-radius: 0.2rem;
     font-weight: 900;

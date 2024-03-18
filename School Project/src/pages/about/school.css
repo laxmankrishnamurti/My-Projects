@@ -69,6 +69,22 @@ hr.about-ruler {
     color: #2D1D54;
 }
 
+.about-school .join-link {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 1rem;
+    text-decoration: none;
+    width: 10%;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    background-color: #2D1D54;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
 
 @media screen and (max-width: 1000px) {
     
