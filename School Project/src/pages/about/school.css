@@ -111,4 +111,8 @@ hr.about-ruler {
         font-size: 1.3rem;
         padding: 0% 5%;
     }
+
+    .about-school .join-link {
+        margin-left: 5%;
+    }
 }
