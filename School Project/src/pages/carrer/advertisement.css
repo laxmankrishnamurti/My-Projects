@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.advertisement-section {
+    width: 100%;
+    margin: 3rem 0rem;
+}
+
+.carrer-advertisement-wrapper {
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.carrer-advertisement-wrapper .ads-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: #2D1D54;
+    font-weight: 900;
+    background-image: linear-gradient(to bottom, pink, AQUA, violet);
+    border-radius: 2rem;
+}
+
+.ads-image-container {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ads-image-container .add-image {
+    width: 95%;
+    border: 2px dotted #2D1D54;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+.add-image img {
+    width: 100%;
+}
+
+/* Media-query starts here  */
+
+@media screen and (max-width:640px) {
+    .carrer-advertisement-wrapper {
+        padding: 0% 2%;
+    }
+
+    .carrer-advertisement-wrapper .ads-heading {
+        font-size: 2rem;
+    }
+}
