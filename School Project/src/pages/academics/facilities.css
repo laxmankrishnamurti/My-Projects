@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.facilities-section {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.academics-facilities-wrapper {
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.facility-container  {
+    margin: 1rem 0rem;
+}
+
+.facility-container .fac-head {
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2D1D54;
+}
+
+.fac-logo-container {
+    width: 100%;
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fac-logo-container .fac-logo{
+    width: 800px;
+}
+
+.fac-logo img{
+    width: 100%;
+    border-radius: 2rem;
+    border: 2px solid #2D1D54;
+    padding: 2px;
+    box-shadow: 0px 0px 5px #2D1D54;
+}
+
+.facility-container .facility-description {
+    font-size: 1.2rem;
+    color: #2D1D54;
+    font-weight: 400;
+    margin: 1rem 0rem;
+}
+
+.facility-bullets .facility-list {
+    list-style-type: disc;
+    margin-left: 1rem;
+    color: #2D1D54;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.academics-facilities-wrapper .fac-divider {
+    border: 1px dotted  #ffbf00;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+
+/* Media-query starts here  */
+
+@media screen and (max-width: 640px) {
+    .academics-facilities-wrapper {
+        padding: 0% 3%;
+    }
+
+    .facility-container .fac-head {
+        font-size: 2rem;
+    }
+
+    .facility-container .facility-description {
+        font-size: 1rem;
+    }
+}
