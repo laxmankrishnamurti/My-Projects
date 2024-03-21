@@ -42,3 +42,26 @@
     border: 1px dotted #2D1D54;
     border-radius: 2rem;
 }
+
+.subject-container .ordered {
+    margin-left: 1rem;
+    color: #2D1D54;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+/* Media Query starts here  */
+
+@media screen and (max-width:640px) {
+    .academics-curriculum-wrapper {
+        padding: 0% 2%;
+    }
+
+    .curricular-container .curricular-heading {
+        font-size: 1.6rem;
+    }
+
+    .curricular-container .curricular-des {
+        font-size: 1rem;
+    }
+}
