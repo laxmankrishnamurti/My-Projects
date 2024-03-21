@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.application-section {
+    width: 100%;
+    margin: 3rem 0rem;
+}
+
+.carrer-application-wrapper {
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.application-heading {
+    text-align: center;
+}
+
+.application-heading .heading-name {
+    font-size: 3rem;
+    color: #2D1D54;
+    font-weight: 900;
+    background-image: linear-gradient(to bottom, green, white, orange);
+    border-radius: 1rem;
+}
+
+.application-heading .heading-des {
+    color: #ff0000;
+    margin: 10px 0px;
+}
+
+.guideline-container .guideline {
+    font-size: 2rem;
+    color: #2D1D54;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0rem;
+}
+
+.guideline-list .guideline-ordered {
+    margin-left: 1rem;
+    color: #2D1D54;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.guideline-ordered .guideline-unordered {
+    margin-left: 1rem;
+    list-style-type: disc;
+    font-weight: 500;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.carrer-application-wrapper .wishes-box {
+    margin-top: 2rem;
+    color: #FF9A0B;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.wishes-box .apply-heart {
+    color: #ff0000;
+    padding: 2px;
+}
+
+
+.carrer-application-wrapper .application-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    background-color: #2D1D54;
+    margin-top: 2rem;
+    transition: all .3s ease;
+}
+
+.application-button:hover {
+    border-radius: 2rem;
+}
+
+
+/* Media-query starts here  */
+
+@media screen and (max-width: 640px) {
+
+    .carrer-application-wrapper {
+        padding: 0% 5%;
+    }
+
+    .application-heading .heading-name {
+        font-size: 2rem;
+    }
+
+    .application-heading .heading-des {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .guideline-container .guideline {
+        font-size: 1.5rem;
+    }
+
+    .guideline-list .guideline-ordered {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .carrer-application-wrapper .wishes-box {
+        font-size: 1.3rem;
+    }
+}
