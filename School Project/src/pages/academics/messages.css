@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.messages-section {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.academics-messages-wrapper {
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.founder-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.founder-container .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.logo-container .founder-logo {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    border-radius: 50%;
+    border: 3px solid #2D1D54 ;
+    /* box-shadow: 0px 0px 30px #2D1D54; */
+}
+
+.founder-container .founder-description {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.founder-description .founder-name {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #2D1D54;
+}
+
+.founder-description .founder-title {
+    color: #ff0000;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.founder-container .founder-break {
+    width: 100%;
+    border: 2px solid #ff9a0b;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+.founder-message {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #2D1D54;
+    font-weight: 400;
+}
+
+.founder-message .found-wel-mess {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.founder-message .founder-wishes {
+    text-align: left;
+    margin: 1rem 0rem ;
+    color: #ff9a0b;
+    font-weight: 800;
+}
+
+.founder-wishes .heart-sign {
+    color: #ff0000;
+    font-size: 1.5rem;
+    padding: 2px;
+}
+
+.academics-messages-wrapper .message-divider {
+    width: 100%;
+    border: 1px dotted #ff9a0b;
+    border-radius: 2rem;
+    margin: 1rem 0rem;
+}
+
+.other {
+    margin-top: 2rem;
+}
+
+.founder-description .director {
+    font-size: 1.7rem;
+}
+
+/* Media Query starts here  */
+
+@media screen and (max-width:640px) {
+    .academics-messages-wrapper  {
+        padding: 0% 2%;
+    }
+
+    .founder-description .founder-name {
+        font-size: 1.3rem;
+    }
+
+    .founder-description .founder-title {
+        font-size: 0.8rem;
+    }
+}
