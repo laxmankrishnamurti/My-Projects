@@ -11,6 +11,7 @@
 .contact-section {
     width: 100%;
     margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .nav-contact-wrapper {
@@ -24,6 +25,7 @@
 
 .contact-form-container .contact-heading {
     font-size: 3rem;
+    padding: 0.5rem;
     text-align: center;
     font-weight: 900;
     color: #2D1D54;
@@ -32,7 +34,9 @@
 }
 
 .contact-form .contact-fieldset {
-    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-color: #2D1D54;
     border-radius: 1rem;
     display: flex;
@@ -108,4 +112,165 @@
 
 .query-btn:hover {
     border-radius: 2rem;
+}
+
+/* Contact boxes starts here  */
+
+.contact-details-container {
+    width: 100%;
+    margin: 2rem 0rem;
+    text-align: center;
+}
+
+.contact-details-container .contact-details-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-details-wrapper .contact-box {
+    width: 30%;
+    height: 17rem;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #2D1D54;
+    transition: all .3s ease;
+}
+
+.contact-box span {
+    font-weight: 900;
+}
+
+.contact-details-wrapper .contact-box:hover {
+    box-shadow: 0px 0px 20px #2D1D54;
+}
+
+.contact-box .contact-logo i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #ff9a0b;
+    transition:  all .3s ease;
+}
+
+.contact-box .contact-heading {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    font-weight: 800;
+    color: #ff9a0b;
+}
+
+.contact-box .boys-wing {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-box .girls-wing {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-box a{
+    position: relative;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-box a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: #ff9a0b;
+    transition: all 0.3s;
+}
+
+.contact-box a:hover::before {
+    width: 100%;
+}
+
+.contact-box .contact-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.three p {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Media Query starts here  */
+
+@media screen and (max-width: 1350px) {
+    .contact-details-wrapper .contact-box {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .contact-details-wrapper .contact-box {
+        width: 45%;
+    }
+    
+    .three {
+        margin-top: 2rem;
+    }
+
+    .contact-form-container .contact-heading {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .contact-form .contact-fieldset {
+        flex-direction: column;
+    }
+
+    .contact-fieldset .contact-input {
+        width: 100%;
+    }
+
+    .contact-details-wrapper .contact-box {
+        width: 100%;
+    }
+
+    .two {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .contact-form-container .contact-heading {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .nav-contact-wrapper {
+        padding: 0% 3%;
+    }
+
+    .contact-form .contact-fieldset {
+        padding-left: 1.5rem;
+    }
+
+    .query-btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .query-btn-container .query-btn {
+        width: 100%;
+    }
 }

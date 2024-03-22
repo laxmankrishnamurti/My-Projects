@@ -116,4 +116,16 @@
     .carrer-application-wrapper .wishes-box {
         font-size: 1.3rem;
     }
+
+    .apply-btn-container {
+        width: 100%;
+    }
+
+    .apply-btn-container .application-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
