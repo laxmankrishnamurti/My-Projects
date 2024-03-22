@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <section class="contact-section">
+      <div class="nav-contact-wrapper">
+        <div class="contact-form-container">
+          <p class="contact-heading">Send In Your Query</p>
+          <form action="#" class="contact-form">
+            <fieldset class="contact-fieldset">
+              <legend class="contact-legend">
+                Query Form
+                <span class="query-logo">
+                  <i class="fa-solid fa-person-circle-question"></i>
+                </span>
+              </legend>
+              <div class="contact-input">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" required />
+              </div>
+
+              <div class="contact-input">
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" required />
+              </div>
+
+              <div class="contact-input">
+                <label for="user-phone">Phone Number</label>
+                <input type="tel" id="user-phone" required />
+              </div>
+
+              <div class="contact-input">
+                <label for="query-subject">Subject</label>
+                <input type="text" id="query-subject" />
+              </div>
+
+              <div class="contact-input">
+                <label for="query-des">Description</label>
+                <textarea
+                  name="query-des"
+                  id="query-des"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write Your Queries in the box"
+                  required
+                >
+                </textarea>
+              </div>
+            </fieldset>
+
+            <!-- Query Button  -->
+
+            <button type="submit" class="query-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- Icon Script  -->
+  <script
+    src="https://kit.fontawesome.com/d7a13f466d.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

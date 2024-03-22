@@ -59,6 +59,8 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 0.5rem;
+    /* border-color: #2D1D54; */
+    border: 2px solid #2D1D54;
 }
 
 .form .legend {

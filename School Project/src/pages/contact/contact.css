@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.contact-section {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.nav-contact-wrapper {
+    width: 100%;
+    padding: 0% 10%;
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form-container .contact-heading {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+    color: #2D1D54;
+    background-image: linear-gradient(to bottom,  violet, pink, SKYBLUE);
+    border-radius: 2rem;
+}
+
+.contact-form .contact-fieldset {
+    padding: 1rem;
+    border-color: #2D1D54;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-fieldset .contact-legend {
+    font-size: 1.5rem;
+    color: #ff9a0b;
+    font-weight: 900;
+    padding: 0px 5px;
+    margin-left: -5px;
+}   
+
+.contact-fieldset .contact-input {
+    margin-bottom: 1rem;
+    width: 45%;
+}
+
+.contact-form label {
+    display: block;
+    color: #2D1D54;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.contact-input input{
+    width: 90%;
+    height: 2.2rem;
+    color: #2D1D54;
+    outline: none;
+    font-weight: 500;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border: 1px solid #2D1D54;
+    border-radius: 0.2rem;
+}
+
+.contact-input input:focus {
+    border: 1px dotted #2D1D54;
+}
+
+.contact-input #query-des {
+    width: 90%;
+    color: #2D1D54;
+    outline: none;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: 1px solid #2D1D54;
+    border-radius: 0.2rem;
+}
+
+.contact-input textarea:focus {
+    border: 1px dotted #2D1D54;
+}
+
+.query-btn {
+    width: 10rem;
+    height: 3rem;
+    margin: 2rem 0rem;
+    font-size: 1.1rem;
+    background-color: #2D1D54;
+    color: #ffffff;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.query-btn:hover {
+    border-radius: 2rem;
+}
