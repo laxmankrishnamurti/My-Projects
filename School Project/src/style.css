@@ -325,7 +325,8 @@ header {
 
 .hero-container .hero-button:hover {
     border-radius: 2rem;
-    box-shadow: 0px 0px 10px #000000;
+    /* box-shadow: 0px 0px 20px #000000; */
+    box-shadow: 0px 0px 20px #2D1D54;
 }
 
 /* Section Three starts here  */

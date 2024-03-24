@@ -372,6 +372,8 @@
 
 }
 
+/* Sixth breakPoint level : 325px  */
+
 @media screen and (max-width: 325px) {
     /* Section-Two starts here  */
 
@@ -389,4 +391,48 @@
     .sectionFive .student-heading {
         font-size: 0.9rem;
     }
+}
+
+
+/* Seventh Breakpoints level : 1400px (for larget screen) */
+
+@media screen and (min-width:1400px) {
+    header {
+        padding: 0% 7%;
+    }
+
+    .sectionTwo {
+        height: 815px;
+    }
+
+    .sectionTwo .hero-container {
+        top: 25%;
+    }
+
+    .hero-container .team,
+    .hero-container .mission {
+        font-size: 4rem;
+    }
+
+    .hero-container .know {
+        font-size: 12rem;
+    }
+
+    .sectionThree {
+        height: 350px;
+    }
+
+    .community-container .community span {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+
+    .community p {
+        padding-top: 1rem;
+    }
+
+    .sectionSix .footer-container {
+        padding: 2% 7%;
+    }
+
 }
