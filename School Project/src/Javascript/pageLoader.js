@@ -14,6 +14,8 @@ function loadPages(page) {
             mainContent.innerHTML = html
 
             const cssFile = page.replace('.html', '.css');
+            const jsFile = page.replace('.html', '.js')
+
 
             //Fetching css file
 
@@ -36,6 +38,25 @@ function loadPages(page) {
                 .catch((error) => {
                     console.error('Failed to fetch or apply css', error);
                 });
+
+            //Fetching and Executing javascript file
+
+            fetch(jsFile)
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error('Unable to fetch the Javascript file')
+                    } else {
+                        return response.text()
+                    }
+                })
+                .then((js) => {
+                    const scriptElement = document.createElement('script')
+                    scriptElement.textContent = js
+                    document.head.appendChild(scriptElement)
+                })
+                .catch((error) => {
+                    console.log('Failed to fetch or Execute JavaScript file')
+                })
         })
         .catch((error) => {
             console.error('Failed to fetch HTML: ', error);
