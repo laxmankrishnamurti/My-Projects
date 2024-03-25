@@ -11,7 +11,6 @@ function loadPages(page) {
             }
         })
         .then((html) => {
-            console.log(html)
             mainContent.innerHTML = html
 
             const cssFile = page.replace('.html', '.css');
