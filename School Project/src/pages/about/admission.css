@@ -142,8 +142,19 @@
     margin-right: 5px;
 }
 
-.guardian-field .guard-addr {
-    width: 49%;
+.guard-addr-box textarea{
+    width: 207%;
+    height: 2.2rem;
+    outline: none;
+    font-weight: 500;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border: 1px solid #2D1D54;
+    border-radius: 0.2rem;
+}
+
+.guard-addr-box textarea:focus {
+    border: 1px dotted #2D1D54;
 }
 
 /* Student address starts here  */
@@ -349,6 +360,10 @@ input[type="file"]:hover {
 
     .address-box .addr-input {
         margin-top: 0.5rem;
+    }
+
+    .guard-addr-box textarea{
+        width: 100%;
     }
 
     .national input[type="text"] {

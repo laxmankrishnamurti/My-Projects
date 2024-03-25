@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./admission.css" /> -->
+    <link rel="stylesheet" href="./admission.css" />
   </head>
   <body>
     <section class="admission-section">
@@ -200,9 +200,14 @@
                 <label for="guard-photo">Guardian Photo</label>
                 <input type="file" id="guard-photo" required />
               </div>
-              <div class="input-field guard-addr">
+              <div class="input-field guard-addr-box">
                 <label for="guard-addr">Guardian Address</label>
-                <input type="text" id="guard-addr" required />
+                <textarea
+                  name="guard-addr"
+                  id="guard-addr"
+                  cols="30"
+                  rows="10"
+                ></textarea>
               </div>
             </fieldset>
 
@@ -219,7 +224,7 @@
 
                 <div class="current-addr address-box">
                   <div class="current-checkbox addr-checkbox">
-                    <input type="checkbox" id="current-check" required />
+                    <input type="checkbox" id="current-check" />
                     <label for="current-check"
                       >If Guardian Address is Current Address</label
                     >
@@ -240,7 +245,7 @@
 
                 <div class="permanent-addr address-box">
                   <div class="permanent-checkbox addr-checkbox">
-                    <input type="checkbox" id="permanent-check" required />
+                    <input type="checkbox" id="permanent-check" />
                     <label for="permanent-check"
                       >If Guardian Address is Permanent Address</label
                     >
