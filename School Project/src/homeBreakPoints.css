@@ -397,9 +397,6 @@
 /* Seventh Breakpoints level : 1400px (for larget screen) */
 
 @media screen and (min-width:1400px) {
-    /* header {
-        padding: 0% 2%;
-    } */
 
     .sectionTwo {
         height: 815px;
