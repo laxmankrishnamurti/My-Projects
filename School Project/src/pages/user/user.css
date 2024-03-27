@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, violet, AQUA, violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section {
+    width: 30%;
+    padding: 1rem;
+    background-color: #ffffff4f;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom, violet, AQUA, violet);
+    box-shadow: 0px 0px 30px #ffffff;
+}
+
+
+.login-wrapper .login-logo-wrapper i{
+    font-size: 3rem;
+    color: #2D1D54;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* .login-input-wrapper .login-des {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+} */
+
+.login-input-wrapper label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #2D1D54;
+}
+
+.login-input-wrapper input {
+    display: block;
+    width: 100%;
+    height: 2.2rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.login-input-wrapper input:focus {
+    border: 1px dotted #2D1D54;
+}
+
+.login-input-wrapper button {
+    width: 100%;
+    height: 2.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #2D1D54;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.login-input-wrapper button:hover {
+    border-radius: 2rem;
+}
+
+.login-input-wrapper .forgot-box a{
+    float: right;
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 2rem;
+    position: relative;
+    transition: all .2s ease;
+}
+
+.forgot-box a:hover {
+    color: #2D1D54;
+}
+
+/* Media query starts here  */
+
+@media screen and (max-width: 1200px) {
+    .login-section {
+        width: 40%;
+    }
+}
+
+@media  screen and (max-width: 900px) {
+    .login-section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .login-section {
+        width: 90%;
+    }
+
+    .login-input-wrapper input {
+        height: 3rem;
+    }
+
+    .login-input-wrapper button{
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .login-section {
+        width: 90%;
+    }
+}
